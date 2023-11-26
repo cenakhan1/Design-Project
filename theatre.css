@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-color: #182327;
+  --secondary-color: #878CFF;
+}
+
+/* start of the header section */
+
+header {
+  height: 11.2rem;
+  display: flex;
+  align-items: center;
+  background-color: #31064A;
+}
+
+.header-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container{
+   object-fit: cover;
+}
+
+.logo-container img {
+  width: 4rem;
+  height: 3.8rem;
+  margin-top: 35px;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.header-container nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: 35px;
+}
+
+.header-container nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: var(--primary-color);
+  padding-left: 4.2rem;
+  color: white;
+}
+
+.header-container nav ul li a:hover
+{
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+
+
+.search-box-container img {
+  width: 1.9rem;
+  height: 1.9rem;
+  position: absolute;
+  right: 92.5rem;
+  top: 4.5rem;
+  margin: 7px -250px 0px 0px;
+}
+
+.search-box-container input {
+  margin-left: 4.2rem;
+  width: 33rem;
+  height: 5.2rem;
+  border: 1px solid #D8E0E2;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #5D696D;
+  padding-left: 4rem;
+  margin-top: 35px;
+
+}
+
+.sign-up-container {
+  display: flex;
+  margin-right: 14rem;
+}
+
+.login-icon {
+  border: none;
+  background: none;
+  margin-top: 35px;
+}
+
+.login-icon a img {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin-left: 2.2rem;
+}
+
+.sign-up {
+  width: 16rem;
+  height: 5.2rem;
+  border-radius: 0.8rem;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+  margin-left: 4.6rem;
+  margin-top: 35px;
+}
+
+.sign-up a{
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger img {
+  display: none;
+}
+
+
+/* end of the header section  */
+
+/*start of  hero  */
+
+.hero {
+  background-image: url('images/jawan.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 850px;
+  animation: slider 15s infinite linear;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url('images/jawan.avif');
+  }
+
+  25% {
+    background-image: url('images/jawan4.jpg');
+  }
+
+  50% {
+    background-image: url('images/jawan2.avif');
+  }
+
+  75% {
+    background-image: url('images/jawan3.avif');
+  }
+}
+
+.hero-container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.hero-container-left {
+  width: 50%;
+}
+
+.hero-container-left h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 7.6rem;
+  padding-top: 12.1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-container-left p {
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin-bottom: 4rem;
+}
+
+.hero-container-left h1 img {
+  height: 7.3rem;
+
+}
+
+.hero-container-left button {
+  width: 15.9rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 600;
+  background: var(--primary-color);
+  color: white;
+}
+
+.hero-container-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container-right img {
+  width: 100%;
+  padding-top: 4.1rem;
+  padding-bottom: 4.1rem;
+  padding-right: 1.3rem;
+}
+
+/* end of hero  */
+
+/* category section starts here */
+.movies {
+
+  margin-bottom: 22rem;
+  background-color: #ffecf2;
+  height: 100%;
+}
+
+.movie-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.all-movies {
+  width: 15.9rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 600;
+  background: var(--primary-color);
+  color: white;
+  margin-right: 55px;
+}
+
+.movie-container h2 {
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 4.6rem;
+  color: var(--primary-color);
+}
+
+.movie-container p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #5D696D;
+  margin-top: 1.8rem;
+  margin-bottom: 7rem;
+}
+
+.movie-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  width: 30%;
+  height: 10rem;
+  margin-bottom: 74rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.box h3 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.box-button {
+  border: none;
+  background: greenyellow;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin-bottom: 0.8rem;
+  height: 28px;
+  width: 128px;
+}
+
+.box-button a{
+  color: white;
+  text-decoration: none;
+}
+
+.box-image {
+  width: 100%;
+  height: 600px;
+}
+
+.box-image:hover {
+  box-shadow: 10px 10px 5px 12px lightblue;
+  cursor: pointer;
+}
+
+.box-stars {
+  width: 10rem;
+  height: 1.8rem;
+}
+
+
+
+.plus-icon {
+  position: relative;
+  left: 39rem;
+  top: -2.5rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.plus-icon img {
+  width: 5.4rem;
+  height: 5.4rem;
+}
+
+/* category section ends here */
+
+/* popular section designing starts here */
+
+.popular {
+  margin-bottom: 22rem;
+  background-color: #e41758;
+  /* height: 100%; */
+  /* height: 400px; */
+}
+
+.popular-button
+{
+  height: 50px;
+  width: 120px;
+  background-color: yellow;
+  color: black;
+  padding: 6px;
+  text-decoration: none;
+}
+
+
+.popular-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.all-movies {
+  width: 15.9rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 600;
+  background: var(--primary-color);
+  color: white;
+  margin-right: 55px;
+}
+
+.popular-container h2 {
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 4.6rem;
+  color: var(--primary-color);
+  color: white;
+}
+
+.popular-container p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #5D696D;
+  margin-top: 1.8rem;
+  margin-bottom: 7rem;
+  color: white;
+}
+
+.popular-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  width: 30%;
+  height: 10rem;
+  margin-bottom: 74rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.box h3 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: white;
+}
+
+.box-button {
+  border: none;
+  background: greenyellow;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin-bottom: 0.8rem;
+  height: 28px;
+  width: 128px;
+}
+
+.box-button a{
+  color: white;
+  text-decoration: none;
+}
+
+.box-image {
+  width: 100%;
+  height: 600px;
+}
+
+.box-image:hover {
+  box-shadow: 10px 10px 5px 12px lightblue;
+  cursor: pointer;
+}
+
+.box-stars {
+  width: 10rem;
+  height: 1.8rem;
+}
+
+
+
+
+
+/* popular section ends here */
+
+/* টেস্ট শুরু */
+.customer {
+  /* background-image: url('images/customer-background.png'); */
+  background-color: aqua;
+
+}
+
+.customer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.customer-container-left {
+  width: 50%;
+  margin-top: 19.7rem;
+  margin-bottom: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.customer-container-right {
+  width: 50%;
+  /* text-align: center; */
+  padding-top: 10rem;
+  display: flex;
+  justify-content: end;
+  /* align-items: flex-start; */
+}
+
+.customer-container-right img {
+  width: 56%;
+  padding-bottom: 11.5rem;
+}
+
+.customer-container-left h2 {
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 4.6rem;
+  color: var(--primary-color);
+  margin-bottom: 7rem;
+}
+
+.customer-feedback {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  color: var(--primary-color);
+}
+
+.age {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: var(--primary-color);
+}
+
+.customer-container-left hr {
+  border-color: #33D1FF;
+  width: 57rem;
+  margin-bottom: 2.8rem;
+}
+
+.customer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 76%;
+}
+
+.customer-info-left {
+  width: 45%;
+}
+
+.customer-info-left h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.customer-feedback {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+
+  color: var(--primary-color);
+  margin-bottom: 4.8rem;
+}
+
+.customer-info-right {
+  width: 23%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.customer-button1 {
+  background: none;
+  border: none;
+  /* width: 15.8rem; */
+  /* height: 4.8rem; */
+}
+
+.customer-button1 img {
+  background: none;
+  border: none;
+  /* width: 15.8rem; */
+  /* height: 4.8rem; */
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.customer-button2 {
+  background: none;
+  border: none;
+}
+
+.customer-button2 img {
+
+  width: 4.8rem;
+
+  height: 4.8rem;
+}
+
+
+
+/* customer section ends here */
+
+/* টেস্ট শেষ */
+
+/* ফাইন্দ শুরু */
+/* find container designing */
+.find {
+
+  background-image: url('images/find-background.png');
+  background-size: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.find-container {
+
+  width: 80%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 10rem 48.5rem;
+}
+
+.find-container h2 {
+
+  font-weight: 700;
+
+  font-size: 4.2rem;
+
+  line-height: 4.6rem;
+
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.find-container p {
+
+  font-weight: 400;
+
+  font-size: 1.8rem;
+
+  line-height: 3rem;
+
+  margin-bottom: 3.8rem;
+  text-align: center;
+}
+
+.find-container button {
+  width: 15.9rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 600;
+  background: var(--primary-color);
+  /* color: white; */
+  text-decoration: none;
+}
+
+.find-container button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* latest news শুরু */
+.latest-news{
+  width: 100%;
+  height: 800px;
+  /* background-color: red; */
+}
+/* latest news শেষ */
+
+/* end of find container designing */
+/* ফাইন্দ শেষ */
+
+/* section শুরু */
+.section-main{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  background-color: #060F19;
+  color: white;
+}
+
+.section-column{
+  border: 1px solid black;
+  width: 33.33%;
+}
+
+.section-image img{
+  width: 200px;
+  height: 55px;
+  border-radius: 100%;
+  margin: 10px 216px;
+}
+
+.section-location
+{
+  margin: 10px 236px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-column{
+  margin: auto;
+}
+
+.contact button{
+  width: 200px;
+  height: 30px;
+  margin: 5px auto;
+}
+
+.lastPart h2, h6
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.footer{
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  background-color: #D8E0E2;
+  font-size: 12px;
+}
+
+/* section শেষ */
